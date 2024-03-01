@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulario de raid</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container-header">
+            <h1>Formulario de raid</h1>
+        </div>
+    </header>
+
+
+    <form action="#" method="post" >
+        <div class="forms-grupos">
+            <label><b>Name </b></label>
+            <input type="text" name="name-label" id="nombre" placeholder="nombre de su personaje" required>
+        </div>
+
+
+        <div class="forms-grupos">
+            <label><b>Email </b></label>
+            <input type="email" name="email-label" id="mail" placeholder="ingrese su correo" required>
+        </div>
+
+
+        <div class="forms-grupos">
+            <label><b>Edad  </b></label>
+            <input type="number" name="number-label" id="edad" placeholder="ingrese su edad" required min="12" max="99">
+        </div>
+
+
+        <div class="forms-grupos">
+        <p><b>Escoge tu rol</b></p>
+            <label>
+                <select name="usuario-opcion" id="select" class="select">
+                    <option disabled selected value="">Selecciona tu rol</option>
+                    <option value="guerrero">war</option>
+                    <option value="cazador">cazador</option>
+                    <option value="paladin">paladin</option>
+                    <option value="picaro">picaro</option>
+                    <option value="sacerdote">sacerdote</option>
+                    <option value="chaman">chaman</option>
+                    <option value="mago">mago</option>
+                    <option value="brujo">brujo</option>
+                    <option value="druida">druida</option>
+                    <option value="caballero de la muerte">caballero de la muerte</option>
+                </select>
+            </label>
+        </div>
+
+
+        <div class="forms-grupos">
+            <p><b> Confirma tu ingreso a la guild </b></p>
+            <label>
+                <input type="radio" name="opcion" id="confirmo">
+                <b>Confirmo </b>
+            </label>
+            <label>
+                <input type="radio" name="opcion" id="raidear">
+                <b>Solo voy a raidear</b>
+            </label>
+        </div>
+
+        
+        <div class="forms-grupos">
+            <p><b>Tu personaje esta especializado en...</b></p>
+            <select name="especializacion-pj" id="especializacion" class="select">
+              <option disabled selected value="">escoge tu especializacion</option>
+              <option value="healer">healer</option>
+              <option value="tank">tank</option>
+              <option value="dps">dps</option>
+            </select>
+        </div>
+
+
+        <div class="forms-grupos">
+            <p><b>Selecciona que dias de la semana puedes raidear</b></p>
+            <label>
+                <input type="checkbox" name="lunes" id="dia">
+                <b>Lunes</b>
+            </label>
+            <label>
+                <input type="checkbox" name="martes" id="dia">
+                <b>Martes</b>
+            </label>
+            <label>
+                <input type="checkbox" name="miercoles" id="dia">
+                <b>Miercoles</b>
+            </label>
+            <label>
+                <input type="checkbox" name="jueves" id="dia">
+                <b>Jueves</b>
+            </label>
+            <label>
+                <input type="checkbox" name="viernes" id="dia">
+                <b>Viernes</b>
+            </label>
+            <label>
+                <input type="checkbox" name="sabado" id="dia">
+                <b>Sabado</b>
+            </label>
+            <label>
+                <input type="checkbox" name="domingo" id="dia">
+                <b>Domingo</b>
+            </label>
+        </div>
+
+
+        <div class="forms-grupos">
+            <p><b>Escribenos tus comentarios</b></p>
+            <label>
+                <input type="text" name="comment" id="comentarios" placeholder="dejanos tu comentario...">
+            </label>
+        </div>
+
+
+        <div class="buttom">
+            <input type="submit" value="enviar">
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="container-fot">
+            <h2>HECHO POR GAEL EDUARDO - necronn</h2>
+        </div>
+    </footer>
+</body>
+</html>
